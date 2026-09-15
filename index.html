@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+</head>
+<body>
+    <header>
+        <h1>Ian Edson Mwashanja</h1>
+        <p>Software Engineering Student and Web Development Enthusiast</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="aaaaaaaaaaaaa linked in.png"
+                 alt="Ian Edson Mwashanja smiling in a profile photograph"
+                 width="200" height="200">
+            <p>
+                My name is Ian Edson Mwashanja, and I am a Software Engineering
+                student interested in programming, web development and
+                building useful software solutions.
+            </p>
+            <p>
+                I am continuously developing my technical skills by learning
+                technologies such as HTML, CSS, JavaScript, databases,
+                C# and Flutter.
+            </p>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <article>
+                <h3>Web Development</h3>
+                <p>
+                    I am learning HTML, CSS and JavaScript to build
+                    responsive and interactive websites.
+                </p>
+            </article>
+            <article>
+                <h3>Programming</h3>
+                <p>
+                    I am developing my programming skills using languages
+                    such as C# and Dart.
+                </p>
+            </article>
+            <article>
+                <h3>Database Development</h3>
+                <p>
+                    I am learning SQL and database design, including
+                    tables, relationships and queries.
+                </p>
+            </article>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <article>
+                <h3>Africa University</h3>
+                <p>
+                    Software Engineering
+                </p>
+            </article>
+            <article>
+                <h3>Chitakatira High School</h3>
+                <p>
+                    Advanced Level
+                </p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{10}"
+                        title="Please enter a 10-digit phone number"
+                        required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                        minlength="3">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        minlength="10"
+                        required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Ian Edson Mwashanja. All rights reserved.</p>
+    </footer>
+</body>
+</html>
