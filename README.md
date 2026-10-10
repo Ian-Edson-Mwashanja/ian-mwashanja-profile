@@ -12,7 +12,7 @@ The website uses semantic HTML5 elements to organize the page and
 includes sections for my About Me, Skills, Education and Contact
 Information.
 
-## Technologies Used
+## Technologies Used.
 
 - HTML5
 - CSS3
