@@ -8,7 +8,7 @@ showcasing my background, skills, education and contact information.
 This project is a personal Profile/Mini-Portfolio website created as
 part of my Unit II coursework.
 
-The website uses semantic HTML5 elements to organise the page and
+The website uses semantic HTML5 elements to organize the page and
 includes sections for my About Me, Skills, Education and Contact
 Information.
 
@@ -34,8 +34,7 @@ Information.
 ## Project Structure
 
 ian-mwashanja-profile/
-│
-├── index.html
-├── style.css
-├── README.md
-└── PROMPT_LOG.md
+1) index.html
+2) style.css
+3) README.md
+4) PROMPT_LOG.md
