@@ -3,96 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Profile</title>
+    <meta name="description"
+          content="The personal profile and mini-portfolio of Ian Edson Mwashanja, a Software Engineering student interested in programming and web development.">
+    <title>Ian Edson Mwashanja | Personal Profile</title>
+    <!-- Custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS for coursework development -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Ian Edson Mwashanja</h1>
-        <p>Software Engineering Student and Web Development Enthusiast</p>
+
+<body class="bg-stone-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white text-center px-4 py-10 md:py-14">
+        <h1 class="text-3xl font-bold md:text-5xl">
+            Ian Edson Mwashanja
+        </h1>
+
+        <p class="mt-3 text-base text-slate-300 md:text-lg">
+            Software Engineering Student and Web Development Enthusiast
+        </p>
     </header>
-    <nav>
+
+    <nav class="site-nav bg-slate-800 text-white px-4 py-4">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
-    <main>
-        <section id="about">
+
+    <main class="page-container">
+
+        <section id="about" class="content-section">
             <h2>About Me</h2>
-            <img src="aaaaaaaaaaaaa linked in.png"
-                 alt="Ian Edson Mwashanja smiling in a profile photograph"
-                 width="200" height="200">
+
+            <img
+                class="profile-image"
+                src="aaaaaaaaaaaaa linked in.png"
+                alt="Ian Edson Mwashanja smiling in a profile photograph"
+                width="200"
+                height="200"
+            >
+
             <p>
                 My name is Ian Edson Mwashanja, and I am a Software Engineering
                 student interested in programming, web development and
                 building useful software solutions.
             </p>
+
             <p>
                 I am continuously developing my technical skills by learning
                 technologies such as HTML, CSS, JavaScript, databases,
                 C# and Flutter.
             </p>
         </section>
-        <section id="skills">
+
+        <section id="skills" class="content-section">
             <h2>My Skills</h2>
-            <article>
-                <h3>Web Development</h3>
-                <p>
-                    I am learning HTML, CSS and JavaScript to build
-                    responsive and interactive websites.
-                </p>
-            </article>
-            <article>
-                <h3>Programming</h3>
-                <p>
-                    I am developing my programming skills using languages
-                    such as C# and Dart.
-                </p>
-            </article>
-            <article>
-                <h3>Database Development</h3>
-                <p>
-                    I am learning SQL and database design, including
-                    tables, relationships and queries.
-                </p>
-            </article>
+
+            <div class="skills-grid">
+
+                <article class="info-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        I am learning HTML, CSS and JavaScript to build
+                        responsive and interactive websites.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Programming</h3>
+                    <p>
+                        I am developing my programming skills using languages
+                        such as C# and Dart.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Database Development</h3>
+                    <p>
+                        I am learning SQL and database design, including
+                        tables, relationships and queries.
+                    </p>
+                </article>
+
+            </div>
         </section>
-        <section id="education">
+        <section id="education" class="content-section">
             <h2>Education</h2>
-            <article>
-                <h3>Africa University</h3>
-                <p>
-                    Software Engineering
-                </p>
-            </article>
-            <article>
-                <h3>Chitakatira High School</h3>
-                <p>
-                    Advanced Level
-                </p>
-            </article>
+            <div class="education-grid">
+                <article class="info-card">
+                    <h3>Africa University</h3>
+                    <p>Software Engineering</p>
+                </article>
+                <article class="info-card">
+                    <h3>Chitakatira High School</h3>
+                    <p>Advanced Level</p>
+                </article>
+            </div>
         </section>
-        <section id="contact">
+
+        <section id="contact" class="content-section">
             <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <div>
+
+            <p class="contact-intro">
+                Have a question or want to get in touch? Complete the form below.
+            </p>
+
+            <form
+                action="#"
+                method="post"
+                class="contact-form bg-white p-5 rounded-xl shadow-sm md:p-8"
+            >
+
+                <div class="form-field">
                     <label for="name">Full Name:</label>
                     <input
                         type="text"
                         id="name"
                         name="name"
+                        minlength="3"
                         required
-                        minlength="3">
+                    >
                 </div>
-                <div>
+
+                <div class="form-field">
                     <label for="email">Email Address:</label>
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        required>
+                        required
+                    >
                 </div>
-                <div>
+
+                <div class="form-field">
                     <label for="phone">Phone Number:</label>
                     <input
                         type="tel"
@@ -100,32 +144,45 @@
                         name="phone"
                         pattern="[0-9]{10}"
                         title="Please enter a 10-digit phone number"
-                        required>
+                        required
+                    >
                 </div>
-                <div>
+
+                <div class="form-field">
                     <label for="subject">Subject:</label>
                     <input
                         type="text"
                         id="subject"
                         name="subject"
+                        minlength="3"
                         required
-                        minlength="3">
+                    >
                 </div>
-                <div>
+
+                <div class="form-field">
                     <label for="message">Message:</label>
                     <textarea
                         id="message"
                         name="message"
                         rows="6"
                         minlength="10"
-                        required></textarea>
+                        required
+                    ></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+
+                <button
+                    type="submit"
+                    class="submit-button bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-700"
+                >
+                    Send Message
+                </button>
             </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Ian Edson Mwashanja. All rights reserved.</p>
+    <footer class="bg-slate-900 text-white text-center px-4 py-6">
+        <p>
+            &copy; 2026 Ian Edson Mwashanja. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
